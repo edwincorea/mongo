@@ -1,0 +1,19 @@
+{
+  "name": "muber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "nodemon --exec mocha --recursive -R min"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "mongoose": "^4.7.5",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  }
+}
