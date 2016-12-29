@@ -15,7 +15,7 @@ const ArtistSchema = new Schema({
     albums: [AlbumSchema]
 });
 
-ArtistSchema.pre("remove", function(next){
+ArtistSchema.pre("remove", function(next){    
     const Album = mongoose.model("album");
     Album.remove({_id: {$in: this.albums}})
       .then(() => next());
