@@ -7,13 +7,12 @@ const app = require("../app");
 
 describe("The Express app", () => {
 
-    it("should handle a GET request to /api", (done) => {
+    it("should handle a GET request to /api", done => {
         request(app)
           .get("/api")
           .end((err, response) => {
-              assert(response.body.hi === "there");
+              assert(response.body.status === "Muber API 1.0");
               done();
           });                
-    });    
-
+    });
 });
